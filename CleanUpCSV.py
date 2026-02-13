@@ -13,44 +13,69 @@ pos_map = {
 }
 
 team_dict = {
-    "ARI": "Arizona Diamondbacks",#
-    "ATL": "Atlanta Braves",#
-    "BAL": "Baltimore Orioles",#
-    "BOS": "Boston Red Sox",#
-    "CHN": "Chicago Cubs",#
-    "CHA": "Chicago White Sox",#
-    "CIN": "Cincinnati Reds",#
-    "CLE": "Cleveland Guardians",#
-    "COL": "Colorado Rockies",#
-    "DET": "Detroit Tigers",#
-    "HOU": "Houston Astros",#
-    "KCA": "Kansas City Royals",#
-    "LAA": "Los Angeles Angels",
-    "LAN": "Los Angeles Dodgers",#
-    "MIA": "Miami Marlins",#
-    "MIL": "Milwaukee Brewers",#
-    "MIN": "Minnesota Twins",#
-    "NYN": "New York Mets",#
-    "NYA": "New York Yankees",#
-    "ATH": "Oakland Athletics",#
+    "ARI": "Arizona Diamondbacks",
+    "ATL": "Atlanta Braves",
+    "BAL": "Baltimore Orioles",
+    "BOS": "Boston Red Sox",
+    "CHN": "Chicago Cubs",
+    "CHA": "Chicago White Sox",
+    "CIN": "Cincinnati Reds",
+    "CLE": "Cleveland Guardians",
+    "COL": "Colorado Rockies",
+    "DET": "Detroit Tigers",
+    "HOU": "Houston Astros",
+    "KCA": "Kansas City Royals",
+    "ANA": "Los Angeles Angels",
+    "LAN": "Los Angeles Dodgers",
+    "MIA": "Miami Marlins",
+    "MIL": "Milwaukee Brewers",
+    "MIN": "Minnesota Twins",
+    "NYN": "New York Mets",
+    "NYA": "New York Yankees",
+    "ATH": "Athletics",
     "PHI": "Philadelphia Phillies",
     "PIT": "Pittsburgh Pirates",
-    "SDN": "San Diego Padres",#
-    "SFN": "San Francisco Giants",#
-    "SEA": "Seattle Mariners",#
-    "SLN": "St. Louis Cardinals",#
-    "TBA": "Tampa Bay Rays",#
-    "TEX": "Texas Rangers",#
-    "TOR": "Toronto Blue Jays",#
-    "WAS": "Washington Nationals",#
-    #Old teams / negro league teams
+    "SDN": "San Diego Padres",
+    "SFN": "San Francisco Giants",
+    "SEA": "Seattle Mariners",
+    "SLN": "St. Louis Cardinals",
+    "TBA": "Tampa Bay Rays",
+    "TEX": "Texas Rangers",
+    "TOR": "Toronto Blue Jays",
+    "WAS": "Washington Nationals",
+    # All Star Teams
+    "ALS": "American League All-Star",
+    "NLS": "National League All-Star",
+    # Old teams
+    "WS1": "Washington Senators",
+    "FLO": "Florida Marlins",
+    "OAK": "Oakland Athletics",
+    "MON": "Montreal Expos",
+    "BSN": "Boston Braves",
+    "PHA": "Philadelphia Athletics",
+    "NY1": "New York Giants",
+    "BRO": "Brooklyn Dodgers",
+    "NEW": "Newark Pepper",
+    "CHF": "Chicago Whales",
+    "SLA": "St. Louis Browns",
+    "BRF": "Brooklyn Tip-Tops",
+    "BLA": "Baltimore Orioles(1901-02)",
+    "MLA": "Milwaukee Brewers(1901)",
+    # Negro league teams
     "BRG": "Brooklyn Royal Giants",
     "ACY": "Atlantic City Bacharach Giants",
     "BLS": "Baltimore Black Sox",
     "KCM": "Kansas City Monarchs",
-    "WS1": "Washington Senators",
-    "CAG": "Chicago American Giants"
-    "MON": "Montreal Expos"
+    "CAG": "Chicago American Giants",
+    "NYL": "New York Lincoln Giants",
+    "NWS": "Newark Stars",
+    "DAY": "Dayton Marcos",
+    "CV9": "Cleveland Bears",
+    "ATN": "Atlanta Black Crackers",
+    "HOM": "Homestead Grays",
+    "BIR": "Birmingham Black Barons",
+    "NY6": "New York Cubans",
+    "NW2": "Newark Eagles"
 }
 
 def extract_positions(row):
