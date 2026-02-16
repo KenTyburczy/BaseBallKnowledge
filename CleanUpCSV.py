@@ -122,6 +122,12 @@ team_dict = {
     "CI2": "Cincinnati Clowns",
     "IN9": "Cincinnati-Indianapolis Clowns",
     "CVB": "Cleveland Buckeyes",
+    "TLN": "Toledo Tigers",
+    "HIL": "Hilldale Club",
+    "ML4": "Milwaukee Bears",
+    "IN5": "Indianapolis ABCs",
+    "DTW": "Detroit Wolves",
+    "PTC": "Pittsburgh Crawfords"
 }
 
 def extract_positions(row):
@@ -135,7 +141,7 @@ def most_played_position(group):
     return pos_map[best_col]
 
 def cleanCSV():
-    df = pd.read_csv("allplayers.csv")
+    df = pd.read_csv("Data/allplayers.csv")
 
     result = (
         df.groupby(["id", "last", "first"])
@@ -152,16 +158,16 @@ def cleanCSV():
     )
     result = result[["id", "last", "first", "team", "position", "season"]]
 
-    result.to_csv("CleanedPlayers.csv", index=False)
+    result.to_csv("Data/CleanedPlayers.csv", index=False)
 
 def sortBySeason():
-    df = pd.read_csv("CleanedPlayers.csv")
+    df = pd.read_csv("Data/CleanedPlayers.csv")
     df["first_season"] = df["season"].apply(
         lambda x: min(map(int, x.split(",")))
     )
     df = df.sort_values(by=["first_season", "last", "first"])
     df = df.drop(columns=["first_season"])
-    df.to_csv("CleanedSorted.csv", index=False)
+    df.to_csv("Data/CleanedSorted.csv", index=False)
 
 
 if __name__ == "__main__":
